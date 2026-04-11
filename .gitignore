@@ -24,6 +24,14 @@ ops.json
 banned-players.json
 banned-ips.json
 
+# Server jars
+*.jar
+server.jar
+paper*.jar
+spigot*.jar
+fabric-server-launch.jar
+forge*.jar
+
 # Minecraft mods, plugins, and config
 mods/
 plugins/
