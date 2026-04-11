@@ -14,6 +14,7 @@ world_the_end/
 logs/
 crash-reports/
 backups/
+minecraft-data/
 
 # Minecraft generated files
 server.properties
