@@ -1,9 +1,12 @@
-FROM eclipse-temurin:25-jre
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /data
 
 COPY minecraft-server.jar /opt/minecraft/server.jar
+COPY entrypoint.sh /entrypoint.sh
+
+RUN chmod +x /entrypoint.sh
 
 EXPOSE 25565
 
-CMD ["java", "-Xms1G", "-Xmx2G", "-jar", "/opt/minecraft/server.jar", "nogui"]
+ENTRYPOINT ["/entrypoint.sh"]
