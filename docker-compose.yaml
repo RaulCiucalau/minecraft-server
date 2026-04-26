@@ -4,12 +4,13 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: mc-server
-    environment:
-      MEMORY_MIN: ${MEMORY_MIN:-1G}
-      MEMORY_MAX: ${MEMORY_MAX:-2G}
-      MINECRAFT_PORT: ${MINECRAFT_PORT:-8888}
+    env_file:
+      - .env
     ports:
       - "${MINECRAFT_PORT:-8888}:25565"
     volumes:
-      - ./minecraft-data:/data
+      - minecraft-data:/data
     restart: unless-stopped
+
+volumes:
+  minecraft-data:
