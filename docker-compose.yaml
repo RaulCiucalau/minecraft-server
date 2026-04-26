@@ -1,0 +1,16 @@
+services:
+  mc-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mc-server
+    env_file:
+      - .env
+    ports:
+      - "${MINECRAFT_PORT:-8888}:25565"
+    volumes:
+      - minecraft-data:/data
+    restart: unless-stopped
+
+volumes:
+  minecraft-data:

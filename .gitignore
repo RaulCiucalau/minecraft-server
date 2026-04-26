@@ -1,3 +1,53 @@
+# Docker / Compose local overrides
+docker-compose.override.yml
+compose.override.yml
+
+# Local env files
+.env.local
+.env.*.local
+
+# Minecraft runtime data
+data/
+world/
+world_nether/
+world_the_end/
+logs/
+crash-reports/
+backups/
+minecraft-data/
+
+# Minecraft generated files
+server.properties
+eula.txt
+usercache.json
+whitelist.json
+ops.json
+banned-players.json
+banned-ips.json
+
+# Server jars
+*.jar
+server.jar
+paper*.jar
+spigot*.jar
+fabric-server-launch.jar
+forge*.jar
+
+# Minecraft mods, plugins, and config
+mods/
+plugins/
+config/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.bak
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
