@@ -28,7 +28,7 @@ The purpose of this repository is to demonstrate how to containerize an applicat
 
 * Docker installed
 * Docker Compose available
-* Minecraft Java Edition client
+* Minecraft or Java Client or Python 3 (optional, for server status testing)
 
 ### Steps
 
@@ -50,34 +50,13 @@ cp .env.example .env
 docker compose up -d --build
 ```
 
-4. Accept the EULA:
-
-Open the file:
-
-```
-minecraft-data/eula.txt
-```
-
-Change:
-
-```
-eula=false
-```
-
-to:
-
-```
-eula=true
-```
-
-5. Restart the server:
+4. Restart the server:
 
 ```bash
 docker compose restart
 ```
 
-6. Connect from Minecraft:
-
+5. Connect to Minecraft via the following adress:  
 ```
 localhost:8888
 ```
