@@ -1,0 +1,80 @@
+# ----------------------------
+# Git
+# ----------------------------
+.git
+.gitignore
+
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[codz]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+ENV/
+
+# ----------------------------
+# Environment variables
+# ----------------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------------
+# Docker local overrides
+# ----------------------------
+docker-compose.override.yml
+compose.override.yml
+
+# ----------------------------
+# Minecraft server data (runtime)
+# ----------------------------
+data/
+world/
+world_nether/
+world_the_end/
+logs/
+crash-reports/
+backups/
+
+# Generated server files
+server.properties
+eula.txt
+usercache.json
+whitelist.json
+ops.json
+banned-players.json
+banned-ips.json
+
+# Mods/plugins/configs
+mods/
+plugins/
+config/
+
+# ----------------------------
+# Editor / IDE
+# ----------------------------
+.vscode/
+.idea/
+
+# ----------------------------
+# OS files
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Temporary / cache
+# ----------------------------
+*.log
+*.tmp
+*.bak
+.cache/
